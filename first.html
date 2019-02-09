@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Page Title</title>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<link rel="stylesheet" href="first.css">
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCbbFTONNSuWCXEB438f-ayDHs3ZDWMeAQ",
+    authDomain: "hospital-8b81a.firebaseapp.com",
+    databaseURL: "https://hospital-8b81a.firebaseio.com",
+    projectId: "hospital-8b81a",
+    storageBucket: "hospital-8b81a.appspot.com",
+    messagingSenderId: "6626944735"
+  };
+  firebase.initializeApp(config);
+const db= firebase.firestore();
+db.settings({timestampsInSnapshots: true});
+</script>
+<script src="first.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <h1>Organ Donation</h1>
+    <p>"After I die if I am buried I will rot. If I am burnt I will become ash but if my body is donated I will live to give life and happiness to many."<br>
+      -Amit Abraham</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="first.html">Home</a>
+    <a href="About.html">About Donation</a>
+    <a href="lung.html">Lung</a>
+    <a href="heart.html">Heart</a>
+    <a href="heart_rate.html">Patient Monitoring</a>
+    <a href="stories.html">Real Life Stories</a>
+    <a href="News and Campaigns.html">News and Campaigns</a>
+    <a href="contact.html" class="right">Contact Us</a>
+
+  </div>
+  <div class="row">
+    <div class="side"><section>
+        <img class="right" src="heart.jpg" style="width:100%">
+        <!--<img class="mySlides" src="lung.jpg" style="width:20%">-->
+        
+      </section></div>
+    <div class="main"><h1>Welcome to India Network for Organ Sharing</h1>
+       <h2>
+         Deceased Donor Organ and Transplantation Program, India
+         </h2>
+         The Department of Health and Family Welfare of the Government of India has taken up the task of promoting deceased organ donation and transplantation in the state to overcome the organ shortage problem.
+         After many consultations it has decided to evolve a cadaver transplant programme on similar lines as the states of Tamil Nadu and Kerala.
+         Both these states are currently at the forefront of this programme in the country.
+         <br>
+         <br>
+         This online secure registry is for organ recipients waiting for organ transplantation from various hospitals in the various states of India.
+         These hospitals are required to be authorized to undertake transplantation of organs such as Kidneys, Liver, Heart and Lungs.
+         Hospitals authorized by the Government of Rajasthan to perform deceased donor transplants are required to provide patient details via an online form in order to join the registry.
+          <br>
+          <br>
+          Once a transplant hospital registers its details, a desktop programme to feed the waiting list of recipients is made available to the hospital with secure login.
+          This would be provided by the 'Nodal Officer' of the programme through the webmaster.
+          The date of registration of a recipient for kidneys will be the date of starting dialysis.
+          A synchronization of the various registered hospital's registry with central registry will ensure the common waiting list priority of the patients.
+   <br>
+
+
+
+
+      </div>
+   <div class="side"><section>
+         <h1>India Deceased Donor <br>
+           Transplant Data
+         </h1>
+        
+         Donors From:
+         Rajasthan            12<br>
+         Gujarat              20<br>
+         Karnataka            16<br>
+         Tamil Nadu           25<br>
+         Bihar                 9<br>
+         Orissa               10<br>
+         West Bengal          12<br>
+         Chattisgarh           7<br>
+         Jammu                 5<br>
+         Haryana              11<br>
+       </section></div>
+       <div class="main"><h2></h2>
+         
+       </div>
+     <div class="side"><section>
+         <img class="right" src="tamil.jpg" style="width:100%">
+       </section></div>
+       <div class="main"><h2> </h2>  </div>
+        
+ </body>
+</html>

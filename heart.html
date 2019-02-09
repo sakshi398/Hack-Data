@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+
+        <link rel="stylesheet" href="heart.css">
+
+    </head>
+
+    <body>
+
+
+
+        <h1>Heart Donation System</h1>
+
+
+
+        <div class="content">
+
+
+
+            <form id="add-cafe-form">
+
+                <input type="text" name="name" placeholder="Patient name">
+
+                <input type="text" name="blood_group" placeholder="Blood group">
+
+                <button>Add Patient Details</button>
+         </form>
+
+
+
+            <ul id="cafe-list"></ul>
+
+
+
+        </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyATKJFyj5kgJ26dbctEr1KgsjCSIJMdvP4",
+    authDomain: "hospital-25715.firebaseapp.com",
+    databaseURL: "https://hospital-25715.firebaseio.com",
+    projectId: "hospital-25715",
+    storageBucket: "hospital-25715.appspot.com",
+    messagingSenderId: "247805566202"
+  };
+  firebase.initializeApp(config);
+ const db = firebase.firestore();
+
+            db.settings({ timestampsInSnapshots: true });
+</script>
+
+             
+
+
+        <script src="heart.js"></script>
+
+    </body>
+
+</html>
